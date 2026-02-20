@@ -1,14 +1,14 @@
 <script>
-	import paloma from '$lib/assets/palomacut.jpg';
+	import paloma from '$lib/assets/color_transparent.png';
 </script>
 
 <section class="flex h-dvh max-w-screen flex-col items-center justify-center gap-4">
 	<img
 		src={paloma}
 		alt="Paloma Cutlery Logo"
-		class="size-32"
+		class="aspect-2/3 w-32"
 	/>
-	<h1 class="text-4xl font-bold">Paloma Cutlery</h1>
+	<h1 class="text-4xl">Paloma Cutlery</h1>
 	<p>Professional Knife Sharpening Services</p>
 </section>
 
