@@ -1,15 +1,13 @@
 <script>
-	import paloma from '$lib/assets/color_transparent.png';
+	import paloma from '$lib/assets/white_black.svg';
+	import hero from '$lib/assets/bw_knife.jpg';
 </script>
 
-<section class="flex h-dvh max-w-screen flex-col items-center justify-center gap-4">
-	<img
-		src={paloma}
-		alt="Paloma Cutlery Logo"
-		class="aspect-2/3 w-32"
-	/>
-	<h1 class="text-4xl">Paloma Cutlery</h1>
-	<p>Professional Knife Sharpening Services</p>
+<section class="flex h-96 max-w-screen flex-col items-center justify-center gap-4 bg-[url('$lib/assets/bw_knife.jpg')] bg-cover bg-center text-white text-center">
+	<!-- <img src={paloma} alt="Paloma Cutlery Logo" class="aspect-2/3 w-32"/> -->
+	<!-- <img src={hero} alt="Knife sharpening hero" class="aspect-video w-full sm:h-96 object-cover border-0" /> -->
+	<h1 class="text-[10vw] md:text-[10vw] font-extrabold text-outline">PALOMA CUTLERY</h1>
+	<p class="text-[4vw] md:text-[2vw] font-medium">Professional Knife Sharpening Services</p>
 </section>
 
 <section class="flex flex-col sm:flex-row justify-center items-center gap-8 p-8">

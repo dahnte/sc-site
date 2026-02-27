@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Ponomar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
@@ -7,4 +7,9 @@
 @theme {
   --font-besley: "Besley", serif; 
   --font-libertinus: "Libertinus", serif; 
-}h
+}
+
+::selection {
+  background: #AF282F;
+  color: white;
+}

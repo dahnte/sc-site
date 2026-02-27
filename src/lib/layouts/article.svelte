@@ -2,11 +2,6 @@
     let { title, author, children } = $props();
 </script>
 
-<section class="prose m-10 max-w-full">
-    <header class="flex flex-col items-center justify-center">
-        <h1>{title}</h1>
-        <p class="text-sm">By {author}</p>
-    </header>
-
+<section class="prose m-20 max-w-full flex flex-col md:flex-row justify-center gap-20">
     {@render children()}
 </section>
