@@ -3,7 +3,7 @@
 	import hero from '$lib/assets/bw_knife.jpg';
 </script>
 
-<section class="flex h-96 max-w-screen flex-col items-center justify-center gap-4 bg-[url('$lib/assets/bw_knife.jpg')] bg-cover bg-center text-white text-center">
+<section class="flex h-96 max-w-screen flex-col items-center justify-center gap-4 bg-cover bg-center text-white text-center" style="background-image: url({hero});">
 	<!-- <img src={paloma} alt="Paloma Cutlery Logo" class="aspect-2/3 w-32"/> -->
 	<!-- <img src={hero} alt="Knife sharpening hero" class="aspect-video w-full sm:h-96 object-cover border-0" /> -->
 	<h1 class="text-[10vw] md:text-[10vw] font-extrabold text-outline">PALOMA CUTLERY</h1>

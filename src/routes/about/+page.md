@@ -4,7 +4,11 @@ author: Steve Cho
 layout: about
 ---
 
-<img class="sm:float-right sm:m-10 object-contain w-80" src="/src/lib/assets/bw_portrait.jpg">
+<script>
+    import portrait from '$lib/assets/bw_portrait.jpg';
+</script>
+
+<img class="sm:float-right sm:m-10 object-contain w-80" src="{portrait}">
 
 Paloma Cutlery was born at counter seat 15 during a lunchtime conversation about knives with the cevicheros at Holbox. Steve was already an experienced and enthusiastic sharpener at this point, maintaining his own knives and those of his friends, family, and local community. The conversation turned into an offer to sharpen a fish butchery knife(deba). After a quick inspection of his work, more knives came, and what would eventually be called Paloma Cutlery became a bi-weekly pop-up sharpening stand in the Mercado la Paloma parking lot. Sharpening turned into knife recommendations, which grew into knife sales. Paloma Cutlery grew to become part of the community.
 

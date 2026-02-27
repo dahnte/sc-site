@@ -1,5 +1,6 @@
+import adapter from '@sveltejs/adapter-cloudflare';
 import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
 import { join } from "path";
 
 const article_path = join(import.meta.dirname, 'src/lib/layouts/article.svelte');
