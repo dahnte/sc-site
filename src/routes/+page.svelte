@@ -33,7 +33,6 @@
 <h1>Visit Us</h1>
 <div class="flex flex-col sm:flex-row justify-center items-center gap-8 p-8">
 	<div>
-		<script async src="https://www.instagram.com/embed.js"></script>
 		<blockquote
 			class="instagram-media"
 			data-instgrm-permalink="https://www.instagram.com/paloma.cutlery/"
