@@ -27,17 +27,17 @@
 		<NavigationMenu.List>
 			<NavigationMenu.Item>
 				<NavigationMenu.Link href="/">
-					<img src={header_logo} alt="Paloma Cutlery Logo" class="aspect-square w-16 hover:scale-115 transition-transform duration-200" />
+					<img src={header_logo} alt="Paloma Cutlery Logo" class="aspect-square w-16 hover:scale-118 transition-transform duration-100" />
 				</NavigationMenu.Link>
 			</NavigationMenu.Item>
 		</NavigationMenu.List>
 
 		<NavigationMenu.List class="flex flex-row items-center justify-center gap-15 sm:gap-30">
 			<NavigationMenu.Item>
-				<NavigationMenu.Link class="sm:py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/services">Services</NavigationMenu.Link>
+				<NavigationMenu.Link class="py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/services">Services</NavigationMenu.Link>
 			</NavigationMenu.Item>
 			<NavigationMenu.Item>
-				<NavigationMenu.Link class="sm:py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/about">About</NavigationMenu.Link>
+				<NavigationMenu.Link class="py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/about">About</NavigationMenu.Link>
 			</NavigationMenu.Item>
 		</NavigationMenu.List>
 		<NavigationMenu.Indicator />
