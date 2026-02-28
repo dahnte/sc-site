@@ -1,7 +1,7 @@
 ---
 title: Services and Pricing
 author: The Writers
-layout: article
+layout: services
 ---
 
 <div>

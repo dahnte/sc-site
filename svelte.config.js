@@ -3,7 +3,7 @@ import { mdsvex } from 'mdsvex';
 // import adapter from '@sveltejs/adapter-static';
 import { join } from "path";
 
-const article_path = join(import.meta.dirname, 'src/lib/layouts/article.svelte');
+const services_path = join(import.meta.dirname, 'src/lib/layouts/services.svelte');
 const about_path = join(import.meta.dirname, 'src/lib/layouts/about.svelte');
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -12,7 +12,7 @@ const config = {
 	preprocess: [mdsvex({ 
 		extensions: ['.svx', '.md'], 
 		smartypants: true, 
-		layout: { article: article_path, about: about_path } 
+		layout: { services: services_path, about: about_path } 
 	})],
 	extensions: ['.svelte', '.svx', '.md']
 };

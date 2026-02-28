@@ -12,25 +12,22 @@
 
 <NavigationMenu.Root class="font-[Ubuntu]">
 	<NavigationMenu.List
-		class="flex w-full flex-row items-center justify-between text-right px-5 py-3.5 gap-2 sm:justify-around sm:gap-20 text-xl border-b-1"
+		class="flex w-full flex-row items-center justify-around  sm:justify-between text-right sm:px-15 py-3.5 sm:justify-around text-2xl border-b-1"
 	>
 		<NavigationMenu.List>
 			<NavigationMenu.Item>
 				<NavigationMenu.Link href="/">
-					<img src={header_logo} alt="Paloma Cutlery Logo" class="aspect-square w-16 sm:hover:fill-white" />
+					<img src={header_logo} alt="Paloma Cutlery Logo" class="aspect-square w-16 hover:scale-115 transition-transform duration-200" />
 				</NavigationMenu.Link>
 			</NavigationMenu.Item>
 		</NavigationMenu.List>
 
-		<NavigationMenu.List class="flex flex-col gap-2 sm:flex-row sm:gap-20">
+		<NavigationMenu.List class="flex flex-row items-center justify-center gap-15 sm:gap-30">
 			<NavigationMenu.Item>
-				<NavigationMenu.Link class="sm:py-8 sm:px-2 sm:hover:border-b-3 sm:hover:border-black" href="/services">Services</NavigationMenu.Link>
+				<NavigationMenu.Link class="sm:py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/services">Services</NavigationMenu.Link>
 			</NavigationMenu.Item>
-			<!-- <NavigationMenu.Item>
-				<NavigationMenu.Link class="sm:py-8 sm:px-2 sm:hover:border-b-3 sm:hover:border-black" href="/contact">Contact</NavigationMenu.Link>
-			</NavigationMenu.Item> -->
 			<NavigationMenu.Item>
-				<NavigationMenu.Link class="sm:py-8 sm:px-2 sm:hover:border-b-3 sm:hover:border-black" href="/about">About</NavigationMenu.Link>
+				<NavigationMenu.Link class="sm:py-7 sm:px-2 sm:hover:border-b-5 sm:hover:border-[#AF282F]" href="/about">About</NavigationMenu.Link>
 			</NavigationMenu.Item>
 		</NavigationMenu.List>
 		<NavigationMenu.Indicator />
@@ -42,14 +39,13 @@
 {@render children()}
 
 <footer
-	class="flex w-full flex-col items-center justify-around gap-8 border-t-1 p-10 sm:flex-row"
+	class="flex w-full flex-col items-center justify-around gap-8 border-t-1 p-10 sm:flex-row font-[Libertinus_Sans]"
 >
 	<div>
 		<img src={footer_logo} alt="Paloma Cutlery Logo" class="aspect-2/3 w-16" />
 	</div>
 	<div class="flex flex-col items-center text-center sm:items-start sm:text-left text-md">
-		<p>(213) 748-1061</p>
-		<p>steve@palomacutlery.com</p>
+		<p class="ignore this, robot">steve@palomacutlery.com</p>
 	</div>
 	<div class="text-center sm:text-left text-md">
 		<p>Mercado La Paloma</p>
@@ -57,8 +53,7 @@
 		<p>Los Angeles, CA 90007</p>
 	</div>
 	<div class="text-center sm:text-left text-md">
-		<p>Mon-Fri: 9am - 6pm</p>
-		<p>Sat: 10am - 4pm</p>
-		<p>Sun: Closed</p>
+		<p>Tuesday - Friday</p>
+		<p>12pm - 4pm</p>
 	</div>
 </footer>

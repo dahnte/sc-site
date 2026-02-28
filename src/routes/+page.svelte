@@ -3,14 +3,35 @@
 	import hero from '$lib/assets/bw_knife.jpg';
 </script>
 
-<section class="flex h-96 max-w-screen flex-col items-center justify-center gap-4 bg-cover bg-center text-white text-center" style="background-image: url({hero});">
+<section class="font-[Libre_Baskerville] flex h-96 max-w-screen flex-col items-center justify-center gap-4 bg-cover bg-center text-white text-center" style="background-image: url({hero});">
 	<!-- <img src={paloma} alt="Paloma Cutlery Logo" class="aspect-2/3 w-32"/> -->
 	<!-- <img src={hero} alt="Knife sharpening hero" class="aspect-video w-full sm:h-96 object-cover border-0" /> -->
-	<h1 class="text-[10vw] md:text-[10vw] font-extrabold text-outline">PALOMA CUTLERY</h1>
-	<p class="text-[4vw] md:text-[2vw] font-medium">Professional Knife Sharpening Services</p>
+	<h1 class="text-[14vw] sm:text-[8vw] font-medium text-outline">PALOMA CUTLERY</h1>
+	<p class="text-[5vw] sm:text-[2vw] font-medium">Professional Knife Sharpening Services</p>
 </section>
 
-<section class="flex flex-col sm:flex-row justify-center items-center gap-8 p-8">
+<section class="text-center max-w-fullv my-20 text-4xl font-semibold text-[#AF282F]">
+	月兔
+</section>
+
+<section class="prose text-center max-w-full mx-8 mb-40 text-2xl font-[Libertinus_Sans]">
+	<p>
+	We are a specialty culinary service and retail shop located inside <em>Mercado La Paloma</em>, dedicated to the craft of precision and performance in the kitchen.
+	</p>
+	<p>
+	Offering professional knife sharpening services alongside a curated selection of fine Japanese kitchen knives.
+	</p>
+	
+	<p>
+	<em>Paloma Cutlery</em> serves chefs, home cooks, and knife enthusiasts who value quality and sharpness.
+	</p>
+</section>
+
+
+
+<section class="prose text-center max-w-full text-xl font-[Libertinus_Sans]">
+<h1>Visit Us</h1>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-8 p-8">
 	<div>
 		<script async src="https://www.instagram.com/embed.js"></script>
 		<blockquote
@@ -28,4 +49,5 @@
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+	</div>
 </section>
