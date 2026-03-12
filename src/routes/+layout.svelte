@@ -4,18 +4,38 @@
 	import header_logo from '$lib/assets/color_logo.svg';
 	import footer_logo from '$lib/assets/color.svg';
 	import { NavigationMenu } from 'bits-ui';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		isStoreOpen();
+		const interval = setInterval(() => {
+			isStoreOpen();
+		}, 60000);
+
+		return () => clearInterval(interval);
+	})
 
 	let { children } = $props();
 
+	let storeOpen = $state();
 	function isStoreOpen() {
-		const now = new Date().toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' });
+		const now = new Date();
 		const date = new Date(now);
 		const day = date.getDay(); // 0 (Sunday) to 6 (Saturday)
 		const hour = date.getHours(); // 0 to 23
 
 		// Check if it's Tuesday to Friday and between 12pm and 4pm
-		return day >= 2 && day <= 5 && hour >= 12 && hour < 16;
+		// return (day >= 2 && day <= 5) && (hour >= 12 && hour < 16);
+		if ((day >= 2 && day <= 5) && (hour >= 11 && hour <= 16))
+			if (hour >= 12)
+				storeOpen = 'o';
+			else
+				storeOpen = 'a';
+		else {
+			storeOpen = 'c';
+		}
 	}
+
 </script>
 
 <svelte:head><link rel="icon" href={favicon}/></svelte:head>
@@ -74,16 +94,21 @@
 	<div class="text-center sm:text-left text-md">
 		<p>Tuesday - Friday</p>
 		<p>12pm - 4pm</p>
-		{#if isStoreOpen()}
-		<p class="text-[darkgreen]">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="darkgreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-door-open-icon lucide-door-open"><path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
-			Shop is open
-		</p>
-		{:else}
-		<p class="text-[darkred]">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="darkred" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-door-closed-locked-icon lucide-door-closed-locked"><path d="M10 12h.01"/><path d="M18 9V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h8"/><path d="M20 17v-2a2 2 0 1 0-4 0v2"/><rect x="14" y="17" width="8" height="5" rx="1"/></svg>
-			Shop is closed
-		</p>
+		{#if storeOpen == 'o'}
+			<p class="text-[darkgreen]">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="darkgreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-door-open-icon lucide-door-open"><path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
+				Shop is open
+			</p>
+		{:else if storeOpen == 'a'}
+			<p class="text-[darkgoldenrod]">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-door-closed-icon lucide-door-closed"><path d="M10 12h.01"/><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/></svg>
+				Shop is opening soon
+			</p>
+		{:else if storeOpen == 'c'}
+			<p class="text-[darkred]">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="darkred" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-door-closed-locked-icon lucide-door-closed-locked"><path d="M10 12h.01"/><path d="M18 9V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h8"/><path d="M20 17v-2a2 2 0 1 0-4 0v2"/><rect x="14" y="17" width="8" height="5" rx="1"/></svg>
+					Shop is closed
+			</p>
 		{/if}
 	</div>
 </footer>
