@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/color_transparent.png';
 	import header_logo from '$lib/assets/color_logo.svg';
 	import footer_logo from '$lib/assets/color.svg';
 	import { NavigationMenu } from 'bits-ui';
