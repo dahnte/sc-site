@@ -20,6 +20,6 @@ layout: services
 | Tip and Chip repairs | Starts at $5 + the cost of sharpening |
 | Reprofile | Starts at $10 + the cost of sharpening |
 | Thinning | Starts at $80 + the standard sharpening |
-| Repolish/Full Restoration | price upon request |
+| Repolish/Full Restoration | Price upon request |
 
 </div>
