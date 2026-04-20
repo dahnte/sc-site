@@ -9,7 +9,7 @@ layout: about
     import closeup from '$lib/assets/color_knife.jpg';
 </script>
 
-<h1 id="about-section" class="text-center sm:text-left">About</h1>
+<h1 class="text-center sm:text-left">About</h1>
 
 <img class="sm:float-right mt-0 ml-0 mb-0 sm:ml-2 sm:-mt-10 object-contain w-100 h-100 sm:h-90" alt="Portait of Steve" src="{portrait}">
 
