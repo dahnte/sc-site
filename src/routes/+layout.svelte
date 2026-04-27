@@ -46,7 +46,7 @@
 	>
 		<NavigationMenu.List>
 			<NavigationMenu.Item>
-				<NavigationMenu.Link href="/">
+				<NavigationMenu.Link data-sveltekit-reload href="/">
 					<img src={header_logo} alt="Paloma Cutlery Logo" class="aspect-square w-16 hover:scale-118 transition-transform duration-100" />
 				</NavigationMenu.Link>
 			</NavigationMenu.Item>
