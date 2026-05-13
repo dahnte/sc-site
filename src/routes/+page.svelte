@@ -40,7 +40,7 @@
 		></blockquote>
 	</div>
     <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0331540760717!2d-118.28097982532297!3d34.01735991957324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c80a9233261b%3A0xf61c9468473317a0!2sMercado%20La%20Paloma!5e0!3m2!1sen!2sus!4v1771404223313!5m2!1sen!2sus" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0331345974987!2d-118.2809799253229!3d34.017360419573215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c9564b4c1af9%3A0x36e63491c48104b7!2sPaloma%20Cutlery!5e0!3m2!1sen!2sus!4v1778631695933!5m2!1sen!2sus" 
         title="Map showing location of Paloma Cutlery"
 		class="aspect-video w-full h-64 sm:h-96 rounded-lg border-0"
         style="border:0;" 
